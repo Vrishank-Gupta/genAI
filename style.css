@@ -1,0 +1,199 @@
+/* Enhanced Style for Visual Appeal and Better Alignment */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #004d99;
+    --accent-color: #ffcc00;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.cta {
+    background-color: var(--accent-color);
+    color: #333;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+.hero-section {
+    background: url('background.jpeg') center/cover no-repeat;
+    color: black;
+    text-align: center;
+    padding: 200px 30px;
+}
+
+.hero1-section {
+    /* background: url('background.jpeg') center/cover no-repeat; */
+    color: black;
+    margin:auto;
+    text-align: center;
+
+    padding: 20px 20px;
+}
+
+.features-section, #map-section {
+    padding: 50px 5%;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 20px;
+    }
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img{
+height: 100%;
+width: 100%;
+}
+
+.parentContainer {
+position: relative;
+text-align: center;
+color: white;
+}
+
+.bottom-left {
+position: absolute;
+bottom: 10px;
+left: 15px;
+}
+
+.top-left {
+position: absolute;
+top: 10px;
+left: 15px;
+}
+
+.top-right {
+position: absolute;
+top: 10px;
+right: 15px;
+}
+
+.bottom-right {
+position: absolute;
+bottom: 10px;
+right: 15px;
+}
+
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+}
+
+.feature-icon {
+    width: 64px; /* Adjust based on your preference */
+    height: auto;
+    margin-bottom: 20px; /* Adds some space between the icon and the feature title */
+}

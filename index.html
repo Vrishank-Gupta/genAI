@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChargeIn - EV Charging Network</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkqI-JH5iIzwlm2WwVb0OyY-DpAMYcVOA&callback=initMap&callback=initMap" async defer></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo"><img src="logo.jpg" alt="ChargeIn Logo" style="height: 60px;"></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="cta" onclick="displaySignupModal()">Sign Up</button>
+</header>
+
+
+<section id="hero" class="hero-section">
+    <!-- <h1>Welcome to ChargeIn</h1>
+    <p>Your go-to network for EV charging stations.</p>
+    <button class="hero-button" onclick="alert('Feature Coming Soon!')">Find a Charging Station Near You</button> -->
+</section>
+
+
+<section id="hero1" class="hero1-section">
+    <h1>Welcome to ChargeIn</h1>
+    <p>Your go-to network for EV charging stations.</p>
+    <button class="hero-button" onclick="alert('Feature Coming Soon!')">Find a Charging Station Near You</button>
+</section>
+
+
+
+
+<section id="map-section">
+    <div id="map" style="height: 400px;"></div>
+</section>
+
+<section id="features" class="features-section">
+    <h2>Features</h2>
+    <div class="features-container">
+        <div class="feature-item">
+            <img src="location_finder.png" alt="Location Finder Icon" class="feature-icon">
+            <h3>Location Finder</h3>
+            <p>Easily locate the nearest EV charging station with our integrated GPS feature.</p>
+        </div>
+        <div class="feature-item">
+            <img src="real_time_availability.png" alt="Real-time Availability Icon" class="feature-icon">
+            <h3>Real-time Availability</h3>
+            <p>View and reserve available charging slots in real-time to save time and avoid waiting.</p>
+        </div>
+        <div class="feature-item">
+            <img src="payment_gateway.png" alt="Payment Gateway Icon" class="feature-icon">
+            <h3>Payment Gateway</h3>
+            <p>Secure and seamless payment options for hassle-free transactions.</p>
+        </div>
+        <div class="feature-item">
+            <img src="charging_history_analytics.png" alt="Charging History & Analytics Icon" class="feature-icon">
+            <h3>Charging History & Analytics</h3>
+            <p>Track your charging sessions, costs, and consumption patterns for better energy management.</p>
+        </div>
+        <div class="feature-item">
+            <img src="customer_support.png" alt="Customer Support Icon" class="feature-icon">
+            <h3>Customer Support</h3>
+            <p>24/7 support to assist with any queries or issues for a smooth charging experience.</p>
+        </div>
+        <div class="feature-item">
+            <img src="community_features.png" alt="Community Features Icon" class="feature-icon">
+            <h3>Community Features</h3>
+            <p>Join the EV community to share tips, experiences, and connect with fellow EV enthusiasts.</p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+  <p>Contact Us: info@chargein.com</p>
+  <p>© 2024 ChargeIn. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
